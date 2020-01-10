@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/dashboard.css" rel="stylesheet">
+</head>
+<body>
+     
+           
+          
+    <div id="wrapper">
+         <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="adjust-nav">
+            
+                <form>
+                    <img src="images/search.png" width="25px" class="imgsearch"> 
+                    <input type="text" name="search" placeholder="Search..">
+                  </form>
+
+                  <span style="float:right" class="seticon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+                  
+            </div>
+        </div>
+       
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                 
+                    <li class="active-link">
+                        <a href="#" ><i class="fa fa-desktop iconsize"></i>&nbsp;&nbsp;Dashboard </a>
+                    </li>
+                   
+
+                    <li>
+                        <a href="#"><i class="fa fa-table iconsize"></i>&nbsp;&nbsp;Permissions</a>
+                    </li>
+                </ul>
+                            </div>
+
+        </nav>
+        
+
+
+        <div id="page-wrapper" >
+            <div id="page-inner">    
+                            <div class="row pad-top">
+                 
+                      <div class="">
+                        <div class="roletabs">
+                            <ul style="list-style-type:none">
+                            <li>
+                              <a href="">
+                              <div class="box bgcol">
+                              <div class="content">
+                             <p>No of Users</p>
+                             <p class="numhigh">239</p>
+                             <p>14 New Users (last month)</p>
+                                </div>
+                              </div>
+                            </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                  <div class="box">
+                                      <div class="content">
+                                        <p>No of Companies</p>
+                                        <p class="comhigh">183</p>
+                                        <p>23 New Companies (last month)</p>
+                                      </div>
+                                    </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="">
+                                  <div class="box">
+                                      <div class="content">
+                                        <p>No of Permission</p>
+                                        <p class="comhigh">37</p>
+                                        <p>08 New Companies (last month)</p>
+                                        </div>
+                                    </div>
+                              </a>
+                            </li>
+                            </ul>
+                             </div>
+                            
+
+                             <div class="roletabs">
+                                <ul style="list-style-type:none">
+                                <li>
+                                  
+                                  <div class="graphtab bgcol">
+                                 <img src="images/graph.png">
+                                  </div>
+                                
+                                </li>
+                                <li>
+                                  
+                                      <div class="compcont">
+                                          <div class="content">
+                                            <p style="font-weight:bold;text-align:center">April 2019</p>
+                                            <p style="text-align:center">06 April 2019 &nbsp;:&nbsp;  3 New Logins</p>
+                                            <p style="text-align:center">08 April 2019 &nbsp;: &nbsp;1 New Logins</p>
+                                            <hr>
+                                            <div style="margin-top:30px">
+                                            <p style="text-align:center;border-top:1px solid black"><span>Last Month </span>&nbsp;&nbsp; <span>Last 2 Months </span></p>
+                                            <p style="border-bottom:1px solid black"><span class="specset">35</span> <span class="numbset">19</span></p>
+                                           </div>
+                                          </div>
+                                        </div>
+                                
+                                </li>
+                                
+                                </ul>
+                                 </div>
+                      </div>
+              
+	
+    </div>
+            </div>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+          
+    <script>
+    
+    
+(function ($) {
+    "use strict";
+    var mainApp = {
+
+        main_fun: function () {
+
+            $(window).bind("load resize", function () {
+                if ($(this).width() < 768) {
+                    $('div.sidebar-collapse').addClass('collapse')
+                } else {
+                    $('div.sidebar-collapse').removeClass('collapse')
+                }
+            });
+        },
+
+        initialization: function () {
+            mainApp.main_fun();
+
+        }
+
+    }
+    $(document).ready(function () {
+        mainApp.main_fun();
+    });
+
+}(jQuery));
+    
+    </script>
+    
+   
+</body>
+</html>
